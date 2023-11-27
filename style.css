@@ -1,0 +1,70 @@
+:root {
+    --C1: #0A0D4E;
+    --C2: #070939;
+  }
+
+body{
+    background-color: var(--C2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--C1);
+    padding: 20px 0;
+}
+
+header ul#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+header ul#menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+section#wellcome{
+    display: flex;
+    padding: 5rem 2rem;
+}
+
+section#wellcome div.left{
+    width: 50%;
+}
+
+section#wellcome div.right{
+    width: 50%;
+}
+
+section#wellcome div.right img{
+    width: 100%;
+}
+
+section#wellcome div.right div#brain{
+    position: absolute;
+    top: 12rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+model-viewer{
+    width: 20rem;
+    height: 20rem;
+}
