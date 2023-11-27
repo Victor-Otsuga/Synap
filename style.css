@@ -1,6 +1,7 @@
 :root {
     --C1: #0A0D4E;
     --C2: #070939;
+    --C3: #3B0C9A;
   }
 
 body{
@@ -57,14 +58,52 @@ section#wellcome div.right img{
 
 section#wellcome div.right div#brain{
     position: absolute;
-    top: 12rem;
-    width: 45%;
+    top: 17vw;
+    width: 42%;
     display: flex;
     justify-content: center;
     
 }
 
+
 model-viewer{
     width: 20rem;
     height: 20rem;
+}
+
+@media (max-width: 700px) {
+    section#wellcome{
+        flex-direction: column;
+        text-align: center;
+    }
+    section#wellcome div.left, section#wellcome div.right{
+        width: 100%;
+    }
+
+    section#wellcome div.right div#brain{
+        position: relative;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section#wellcome div.right img{
+        display: none;
+    }
+
+}
+
+footer div#wave{
+    background-image: url(./images/wave.png);
+    background-color: #070939;
+    background-size: cover;
+    width: 100%;
+    height: 2.2rem;
+}
+
+footer{
+    background-color: var(--C3);
+    height: 12rem;
+    
 }
