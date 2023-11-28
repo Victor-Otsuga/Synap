@@ -6,23 +6,38 @@
     <link rel="stylesheet" href="./style.css">
     <title>Synap</title>
 </head>
-<body>
+<body class="loading">
+    <div id="loading">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+
     <header>
-        <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="menu">
+            <li class="active"><a href="">Início</a></li>
+            <li><a href="./pages/problem.html">Problema e Solução</a></li>
+            <li><a href="./pages/demonstration.html">Demonstração da Solução</a></li>
+            <li><a href="./pages/contact.html">Contato</a></li>
         </ul>
     </header>
-    <section id="wellcome">
-            <div class="left">
+    <section class="page-section" id="wellcome">
+            <div id="first-text" class="left outScrenn">
                 <h1>Conheça o Synap</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia error, minima consequuntur voluptatibus consequatur ex ut nulla, nesciunt est impedit dolorem unde voluptas sequi itaque aliquam veritatis. Eligendi, aperiam voluptates.</p>
             </div>
             <div class="right"> 
                 <img src="./images/bg-blush.png" alt="">
                 <div id="brain">
-                    <model-viewer alt="Model" auto-rotate disable-tap src="./images/brain_hologram.glb"> 
+                    <model-viewer id="model-brain" alt="Model" auto-rotate disable-tap src="./images/brain_hologram.glb"> 
                     </model-viewer>
                 </div>
             </div>
@@ -33,5 +48,6 @@
         <p>fotter info</p>
     </footer>
 </body>
+<script src="./script.js"></script>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 </html>
