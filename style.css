@@ -17,9 +17,6 @@ body{
     box-sizing: border-box;
 }
 
-.loading{
-    overflow:hidden;
-}
 
 .outScrenn{
     margin-left: -40rem;
@@ -29,7 +26,7 @@ body{
 div#loading{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 2000px;
     background-color: var(--C3);
     z-index: 2;
     transition: all 1s ease;
@@ -37,6 +34,14 @@ div#loading{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div#loading div.lds-roller{
+  position: fixed;
+  top: 45%;
+  left: 47%;
+
+    
 }
 
 header{
@@ -51,6 +56,8 @@ header ul.menu{
     display: flex;
     gap: 3rem;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header ul.menu li.active{
@@ -117,7 +124,28 @@ model-viewer{
     height: 20rem;
 }
 
+section#pitch div#video{
+    width: 50%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--C3);
+    padding: 1rem 0;
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+section#pitch div#video iframe{
+    width: 90%;
+    height: 90%;
+}
+
 @media (max-width: 700px) {
+    .outScrenn{
+        margin-left: 0;
+        margin-right: 0;
+    }
     section#wellcome{
         flex-direction: column;
         text-align: center;

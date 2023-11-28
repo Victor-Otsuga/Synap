@@ -6,10 +6,10 @@ const frsText = document.querySelector('#first-text');
 
 brain.addEventListener('load', () => {
     setTimeout(() => {
-        loading.style.opacity = '0';
+        //loading.style.opacity = '0';
         body.classList.remove('loading');
         setTimeout(() => { 
-            loading.remove();
+            //loading.remove();
             frsText.classList.remove('outScrenn'); 
         }, 500);
     }, 2000);
