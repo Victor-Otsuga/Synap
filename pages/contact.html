@@ -15,5 +15,52 @@
             <li class="active"><a href="">Contato</a></li>
         </ul>
     </header>
+    <section class="page-section" id="contactSec">
+        <div class="left">
+            <h2>Entre em Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil perferendis et eveniet dolorum facilis!</p>
+        </div>
+        <div id="contact" class="right">
+            <form action="">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                <p id="ErroMsg"></p>
+                <input id="formSubmit" type="button" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <section id="group">
+        <h2>Integrantes do Grupo</h2>
+        <table>
+            <tr id="imagesTr">
+                <td class="imageTd"><img src="../images/va.png" alt="Victor Augusto profile pic"></td>
+                <td class="space"></td>
+                <td class="imageTd"><img src="../images/vm.png" alt="Vitor Moura profile pic"></td>
+            </tr>
+            <tr>  
+                <td class="nameTD">Victor Augusto</td>
+                <td class="space"></td>
+                <td class="nameTD">Vitor Moura</td>
+            </tr>
+            <tr>
+                <td>RM 553518</td>
+                <td class="space"></td>
+                <td>RM 553806</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <div id="wave"></div>
+        <div id="footer-content">
+            <img src="../images/synap.png" alt="Synap Logo">
+            <p>Powered by <a href="../index.html#wellcome">Synap</a></p>
+        </div>
+    </footer>
+
+    <script src="../script/form.js"></script>
 </body>
 </html>

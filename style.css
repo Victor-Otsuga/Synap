@@ -23,6 +23,11 @@ body{
     margin-right: 40rem;
 }
 
+.error, #ErroMsg{
+    color: red !important;
+}
+
+
 div#loading{
     position: absolute;
     width: 100%;
@@ -141,6 +146,15 @@ section#pitch div#video iframe{
     height: 90%;
 }
 
+section#pitch div#second-text h2{
+  font-size: 3rem;
+  margin: 0;
+}
+
+section#pitch div#second-text p{
+  font-size: 1.5rem;
+}
+
 @media (max-width: 700px) {
     .outScrenn{
         margin-left: 0;
@@ -168,18 +182,266 @@ section#pitch div#video iframe{
 
 }
 
-footer div#wave{
-    background-image: url(./images/wave.png);
-    background-color: #070939;
-    background-size: cover;
-    width: 100%;
-    height: 2.2rem;
+div#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+div#contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--C1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+div#contact form input, div#contact form textarea{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: var(--C2);
+
+}
+div#contact form input[type=button]{
+    background-color: var(--C2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div#contact form input[type=button]:hover{
+  scale: 1.05;
+  background-color: var(--C3);
+}
+
+section#contactSec div.left h2{
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+section#contactSec div.left p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+section#group{
+  padding-bottom:4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#group h2{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+section#group table tr td.space{ 
+  width: 10rem;
+}
+section#group table tr td{
+  text-align: center;
+}
+section#group table tr td.imageTd img{
+  width: 10rem;
+  border-radius: 5rem;
+  border: 3px solid var(--C3);
+}
+
+section#problemFrst div.left h2{
+  font-size: 3rem;
+  margin: 1rem 0;
+
+}
+
+section#problemFrst div.left p{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+
+}
+
+section#problemFrst div.right{
+  display: flex;
+}
+
+section#problemFrst div.right img{
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#problemScnd div.left{
+  display: flex;
+}
+
+section#problemScnd div.left img{
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+section#problemScnd div.right h2{
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+
+section#problemScnd div.right p{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+section#problemThrd div.left h2{
+  font-size: 3rem;
+  margin: 1rem 0;
+
+}
+
+section#problemThrd div.left p{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+
+}
+
+section#problemThrd div.right{
+  display: flex;
+}
+
+section#problemThrd div.right img{
+  width: 80%;
+  margin: 0 auto;
+}
+section#problemThrd div.left div#buttonProblem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#problemThrd div.left div#buttonProblem a{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--C1);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;  
+  margin: 0 auto;
+}
+
+section#problemThrd div.left div#buttonProblem a:hover{
+  scale: 1.05;
+  background-color: var(--C3);
+}
+
+h2#demoTitle{
+  
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+section#demoFrst div.left h2{
+  font-size: 3rem;
+  margin: 1rem 0;
+
+}
+
+section#demoFrst div.left p{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+
+}
+
+section#demoFrst div.right{
+  display: flex;
+}
+
+section#demoFrst div.right img{
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#demoScnd div.left{
+  display: flex;
+}
+
+section#demoScnd div.left img{
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+section#demoScnd div.right h2{
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+
+section#demoScnd div.right p{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+
 
 footer{
     background-color: var(--C3);
     height: 12rem;
     
+}
+
+footer div#wave{
+  background-image: url(./images/wave.png);
+  background-color: #070939;
+  background-size: cover;
+  width: 100%;
+  height: 2.2rem;
+}
+
+footer div#footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+footer div#footer-content p a{
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer div#footer-content p a:hover{
+  color: var(--C1);
 }
 
 .lds-roller {
