@@ -444,6 +444,10 @@ footer div#footer-content p a:hover{
   color: var(--C1);
 }
 
+footer div#footer-content img{
+  width:6rem
+}
+
 .lds-roller {
     display: inline-block;
     position: relative;
