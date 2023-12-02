@@ -432,6 +432,14 @@ footer div#footer-content{
   align-items: center;
   height: 10rem;
 }
+footer div#footer-content div#logos{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
 
 footer div#footer-content p a{
   color: #fff;
