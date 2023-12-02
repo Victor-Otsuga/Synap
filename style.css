@@ -384,7 +384,7 @@ section#demoFrst div.right{
 }
 
 section#demoFrst div.right img{
-  width: 80%;
+  height: 30rem;
   margin: 0 auto;
 }
 
@@ -393,7 +393,7 @@ section#demoScnd div.left{
 }
 
 section#demoScnd div.left img{
-  width: 80%;
+  height: 30rem;
   margin: 0 auto;
 
 }
