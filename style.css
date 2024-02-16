@@ -65,6 +65,10 @@ header ul.menu{
     text-align: center;
 }
 
+header ul.mobile-itens{
+    display: none;
+}
+
 header ul.menu li.active{
     border-bottom: 2px solid var(--C3);
 }
@@ -155,32 +159,6 @@ section#pitch div#second-text p{
   font-size: 1.5rem;
 }
 
-@media (max-width: 700px) {
-    .outScrenn{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    section#wellcome{
-        flex-direction: column;
-        text-align: center;
-    }
-    section#wellcome div.left, section#wellcome div.right{
-        width: 100%;
-    }
-
-    section#wellcome div.right div#brain{
-        position: relative;
-        top: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    section#wellcome div.right img{
-        display: none;
-    }
-
-}
 
 div#contact{
     display: flex;
@@ -541,3 +519,49 @@ footer div#footer-content img{
     }
   }
   
+  @media (max-width: 700px) {
+
+
+    header{
+      width: 100%;
+      height: 1.5rem;
+      
+    }
+
+    header ul.menu{
+      gap: 1rem;
+    }
+
+    header ul.menu li a{
+      font-size: 15px;
+    }
+
+
+
+
+    .outScrenn{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section#wellcome{
+        flex-direction: column;
+        text-align: center;
+    }
+    section#wellcome div.left, section#wellcome div.right{
+        width: 100%;
+    }
+
+    section#wellcome div.right div#brain{
+        position: relative;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section#wellcome div.right img{
+        display: none;
+    }
+
+
+}
