@@ -391,8 +391,7 @@ section#demoScnd div.right p{
 
 footer{
     background-color: var(--C3);
-    height: 12rem;
-    
+    height: 14rem;
 }
 
 footer div#wave{
@@ -622,5 +621,13 @@ footer div#footer-content img{
     section#group table tr td.imageTd img{
       width: 7rem;
     }
+
+    div#contact form input, div#contact form textarea{
+      text-align: center;
+    }
+
+    div#loading div.lds-roller {
+       left: 41%;
+  }
 
 }
