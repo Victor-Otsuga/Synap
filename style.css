@@ -563,6 +563,12 @@ footer div#footer-content img{
         display: none;
     }
 
+    section#wellcome div#first-text h1{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    }
+
+
     section#pitch{
       flex-direction: column;
     }
@@ -579,6 +585,42 @@ footer div#footer-content img{
 
     section#pitch div#second-text p{
       font-size: 1.2rem;
+    }
+    section#pitch div#second-text h2{
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    section.page-section{
+      flex-direction: column ;
+    }
+
+    section.page-section div.left, section.page-section div.right{
+      width: 100%;
+      text-align: center;
+    }
+
+    section#problemScnd{
+      flex-direction: column-reverse;
+    }
+
+    section#problemFrst div.left p{
+      font-size: 1.2rem;
+    }
+    section#problemFrst div.left h2{
+      font-size: 2.5rem;
+    }
+
+    section#demoScnd{
+      flex-direction: column-reverse;
+    }
+
+    section#group table{
+      padding: 0 3rem;
+    }
+
+    section#group table tr td.imageTd img{
+      width: 7rem;
     }
 
 }
